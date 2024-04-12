@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email view</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+         display: grid;
+         grid-template-columns: 40px 200px 1fr 300px;
+         grid-template-rows: 80px 1fr;
+         text-align: center;
+         
+    }
+    nav{
+        background-color: black;
+        color: white;
+        grid-row: 1/-5;
+    }
+    menu{
+        background-color: blue;
+        grid-column: 2/5;
+        display: flex;
+        gap: 5px;
+        padding:10px ;
+    }
+    
+    button{
+        border: none;
+    }
+    button:last-child{
+        margin-left: auto;
+        margin-right: 50px;
+        padding: 5px;
+        background-color: brown;
+        color:white ;
+    }
+    button:first-child{
+        margin-left: 20px;
+    }
+    .container{
+        background-color:lightcyan;
+        height:100vh ;
+        display: flex;
+        flex-direction: column;
+
+       
+    }
+    aside{
+        background-color:lightcyan;
+        grid-column: 4/-1;
+
+    }
+    .Email{
+        background-color: grey;
+        margin: auto;
+        padding: 30px;
+        height: 10px;
+        width: 100px;
+    }
+    
+        
+    
+    
+    
+
+
+</style>
+<body>
+   
+    <nav> Nav </nav>
+
+    <menu>
+        <button>New</button>
+        <button>Replay</button>
+        <button>forward</button>
+        <button>Mark unread</button>
+        <button>Trash</button>
+    </menu>
+
+    <section class="container">
+        <div class="Email"> Email 1 </div>
+        <div class="Email"> Email 2</div>
+        <div class="Email"> Email 3 </div>
+        <div class="Email"> Email 4 </div>
+        <div class="Email"> Email 5 </div>
+    </section>
+
+
+    <main>Email View</main>
+
+    <aside> Additional Info </aside>
+
+</body>
+</html>
